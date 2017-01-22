@@ -1,0 +1,184 @@
+/*!
+ * Bootstrap v3.3.6 (http://getbootstrap.com)
+ * Copyright 2011-2015 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ */
+#header {
+  height: 52px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0; }
+
+.ys-navbar-right {
+  float: right; }
+
+.ys-left-bar {
+  width: 200px;
+  overflow: auto;
+  left: 0;
+  width: 200px;
+  position: absolute;
+  top: 51px;
+  bottom: 0;
+  background: #2f3844; }
+  .ys-left-bar .sidebar-title {
+    height: 29px;
+    border-bottom: 1px solid #35404D;
+    margin-bottom: 0px; }
+    .ys-left-bar .sidebar-title .ys-tosmall {
+      float: right;
+      height: 21px;
+      line-height: 24px;
+      width: 29px;
+      border-radius: 20px 0 0 20px;
+      background: #fff;
+      margin-top: 3px;
+      font-size: 20px;
+      padding-left: 4px;
+      color: #19aa8d; }
+
+.ys-right-contain {
+  position: absolute;
+  left: 200px;
+  right: 0;
+  top: 52px;
+  bottom: 0;
+  overflow-y: auto; }
+
+.ys-right-pos {
+  left: 40px; }
+
+.ys-left-tree ul {
+  padding: 5px 0;
+  margin: 0; }
+  .ys-left-tree ul li {
+    padding: 0;
+    margin: 0;
+    list-style-type: none; }
+    .ys-left-tree ul li h5 {
+      padding: 10px 9px;
+      margin: 0;
+      color: #d0d0d0;
+      cursor: pointer;
+      overflow: hidden; }
+    .ys-left-tree ul li h6 {
+      padding: 8px 5px;
+      margin: 0;
+      color: #d0d0d0;
+      cursor: pointer;
+      font-size: 12px; }
+      .ys-left-tree ul li h6:after {
+        font-family: 'Glyphicons Halflings';
+        content: "\e250";
+        font-size: 12px;
+        width: 11px;
+        height: 11px;
+        line-height: 7px;
+        text-align: center;
+        float: left;
+        margin-top: 5px;
+        margin-right: 4px; }
+    .ys-left-tree ul li a {
+      display: block;
+      padding: 5px 0 5px 18px;
+      color: #d0d0d0;
+      font-size: 12px; }
+      .ys-left-tree ul li a:hover {
+        color: #19aa8d; }
+    .ys-left-tree ul li.active > ul {
+      display: block; }
+    .ys-left-tree ul li.active > a {
+      color: #19aa8d; }
+      .ys-left-tree ul li.active > a:focus {
+        text-decoration: none; }
+    .ys-left-tree ul li.active h5 {
+      color: #19aa8d; }
+    .ys-left-tree ul li.active > h6:after {
+      font-family: 'Glyphicons Halflings';
+      content: "\e252"; }
+
+.ys-tree-level1.active > ul {
+  margin: 5px 8px;
+  background: #35404D;
+  border-radius: 10px;
+  padding: 4px; }
+
+.ys-tree-level1.active h5 .ys-arrow:before {
+  content: "\e259"; }
+
+.ys-tree-level1 h5 .ys-arrow {
+  float: right;
+  font-size: 10px;
+  font-family: 'Glyphicons Halflings'; }
+  .ys-tree-level1 h5 .ys-arrow:before {
+    content: "\e258"; }
+
+.ys-tree-level1 h5 .icon-tree {
+  width: 19px;
+  height: 19px;
+  font-size: 19px;
+  float: left;
+  margin-right: 4px;
+  top: 0; }
+
+.ys-tree-level1 ul {
+  display: none; }
+
+.ys-left-minbar {
+  width: 40px;
+  overflow: visible; }
+  .ys-left-minbar li {
+    position: relative; }
+    .ys-left-minbar li h5 .icon-tree {
+      display: block; }
+    .ys-left-minbar li h5 .yc-tree-text {
+      display: none; }
+    .ys-left-minbar li h5 .ys-arrow {
+      display: none; }
+    .ys-left-minbar li:hover h5 .yc-tree-text {
+      display: inline-block;
+      position: absolute;
+      top: 0;
+      left: 40px;
+      width: 184px;
+      background: #2f3844;
+      height: 39px;
+      line-height: 39px;
+      border-radius: 0;
+      padding-left: 10px; }
+    .ys-left-minbar li:hover h5:before {
+      content: "";
+      border-left: 2px solid #19aa8d;
+      height: 39px;
+      position: absolute;
+      left: 0;
+      top: 0; }
+    .ys-left-minbar li.ys-tree-level1.active > ul {
+      left: 32px; }
+    .ys-left-minbar li ul {
+      display: none; }
+    .ys-left-minbar li:hover > ul {
+      display: block;
+      width: 184px;
+      position: absolute;
+      left: 40px;
+      top: 34px;
+      border-radius: 0px;
+      background: #35404D;
+      padding-left: 5px; }
+      .ys-left-minbar li:hover > ul li {
+        padding: 3px 0; }
+        .ys-left-minbar li:hover > ul li > h6:after {
+          content: ">";
+          float: right; }
+        .ys-left-minbar li:hover > ul li:hover h6 {
+          color: #19aa8d; }
+        .ys-left-minbar li:hover > ul li:hover ul {
+          width: 184px;
+          position: absolute;
+          left: 178px;
+          top: -2px;
+          border-radius: 0;
+          background: #35404D;
+          padding: 4px; }

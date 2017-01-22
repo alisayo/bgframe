@@ -1,0 +1,239 @@
+//
+// Wells
+// --------------------------------------------------
+//add
+#header {
+    height: 52px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.ys-navbar-right {
+    float: right;
+}
+
+.ys-left-bar {
+    width: 200px;
+    overflow: auto;
+    left: 0;
+    width: 200px;
+    position: absolute;
+    top: 51px;
+    bottom: 0;
+    background: $left-tree-link-active-bg;
+    .sidebar-title {
+        height: 29px;
+        border-bottom: 1px solid $left-tree-bg;
+        margin-bottom: 0px;
+        .ys-tosmall {
+            float: right;
+            height: 21px;
+            line-height: 24px;
+            width: 29px;
+            border-radius: 20px 0 0 20px;
+            background: $body-bg;
+            margin-top: 3px;
+            font-size: 20px;
+            padding-left: 4px;
+            color: $left-tree-link-hover-color;
+        }
+    }
+}
+
+.ys-right-contain {
+    position: absolute;
+    left: 200px;
+    right: 0;
+    top: 52px;
+    bottom: 0;
+    overflow-y: auto;
+}
+
+.ys-right-pos {
+    left: 40px;
+}
+
+.ys-left-tree {
+    ul {
+        padding: 5px 0;
+        margin: 0;
+        li {
+            padding: 0;
+            margin: 0;
+            list-style-type: none;
+            h5 {
+                padding: 10px 9px;
+                margin: 0;
+                color: $left-tree-color;
+                cursor: pointer;
+                overflow: hidden;
+            }
+            h6 {
+                padding: 8px 5px;
+                margin: 0;
+                color: $left-tree-color;
+                cursor: pointer;
+                font-size: $font-size-small;
+                &:after {
+                    font-family: 'Glyphicons Halflings';
+                    content: "\e250";
+                    font-size: 12px;
+                    width: 11px;
+                    height: 11px;
+                    line-height: 7px;
+                    text-align: center;
+                    float: left;
+                    margin-top: 5px;
+                    margin-right: 4px;
+                }
+            }
+            a {
+                display: block;
+                padding: 5px 0 5px 18px;
+                color: $left-tree-color;
+                font-size: $font-size-small;
+                &:hover {
+                    color: $left-tree-link-hover-color;
+                }
+            }
+            &.active {
+                >ul {
+                    display: block;
+                }
+                >a {
+                    color: $left-tree-link-hover-color;
+                    &:focus {
+                        text-decoration: none;
+                    }
+                }
+                h5 {
+                    color: $left-tree-link-hover-color;
+                }
+                >h6 {
+                    &:after {
+                        font-family: 'Glyphicons Halflings';
+                        content: "\e252"
+                    }
+                }
+            }
+        }
+    }
+}
+
+.ys-tree-level1 {
+    &.active {
+        >ul {
+            margin: 5px 8px;
+            ;
+            background: $left-tree-bg;
+            border-radius: 10px;
+            padding: 4px;
+        }
+        h5 .ys-arrow {
+            &:before {
+                content: "\e259"
+            }
+        }
+    }
+    h5 .ys-arrow {
+        float: right;
+        font-size: 10px;
+        font-family: 'Glyphicons Halflings';
+        &:before {
+            content: "\e258"
+        }
+    }
+    h5 .icon-tree {
+        width: 19px;
+        height: 19px;
+        font-size: 19px;
+        float: left;
+        margin-right: 4px;
+        top: 0;
+    }
+    ul {
+        display: none;
+    }
+}
+
+.ys-left-minbar {
+    width: 40px;
+    overflow: visible;
+    li {
+        position: relative;
+        h5 {
+            & .icon-tree {
+                display: block;
+            }
+            .yc-tree-text {
+                display: none;
+            }
+            .ys-arrow {
+                display: none;
+            }
+        }
+        &:hover h5 {
+            .yc-tree-text {
+                display: inline-block;
+                position: absolute;
+                top: 0;
+                left: 40px;
+                width: 184px;
+                background: $left-tree-link-active-bg;
+                height: 39px;
+                line-height: 39px;
+                border-radius: 0;
+                padding-left: 10px;
+            }
+            &:before {
+                content: "";
+                border-left: 2px solid $left-tree-link-hover-color;
+                height: 39px;
+                position: absolute;
+                left: 0;
+                top: 0;
+            }
+        }
+        &.ys-tree-level1.active >ul {
+            left: 32px;
+        }
+        ul {
+            display: none;
+        }
+        &:hover >ul {
+            display: block;
+            width: 184px;
+            position: absolute;
+            left: 40px;
+            top: 34px;
+            border-radius: 0px;
+            background: $left-tree-bg;
+            padding-left: 5px;
+            li {
+                padding: 3px 0;
+                >h6 {
+                    &:after {
+                        content: ">";
+                        float: right;
+                    }
+                }
+                &:hover {
+                    h6 {
+                        color: $left-tree-link-hover-color;
+                    }
+                    ul {
+                        width: 184px;
+                        position: absolute;
+                        left: 178px;
+                        top: -2px;
+                        border-radius: 0;
+                        background: $left-tree-bg;
+                        padding: 4px;
+                    }
+                }
+            }
+        }
+    }
+}
